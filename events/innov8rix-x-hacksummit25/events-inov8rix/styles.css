@@ -9,7 +9,7 @@
   body {
     font-family: 'Arial', sans-serif;
     background-color: #000;
-    background-image: url('assets/bg/background.png'); /* Use your previous background */
+    background-image: url('assets/bg/background.jpg'); /* Use your previous background */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,50 +237,4 @@
 
 .event-card:hover {
   transform: perspective(1000px) rotateX(1deg) rotateY(2deg);
-}
-#particles-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Particle Container */
-.particle-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0; /* Behind everything but above background */
-  pointer-events: none;
-}
-
-/* Base Particle Style */
-.particle {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ff00ff 0%, #00ffff 100%);
-  opacity: 0.6;
-  animation: floatUp linear infinite;
-}
-
-
-/* Float Animation */
-@keyframes floatUp {
-  0% {
-    transform: translateY(100vh) scale(1);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateY(-10vh) scale(1);
-    opacity: 0;
-  }
 }
